@@ -1,4 +1,4 @@
-.PHONY: build
+.PHONY: help
 
 PWD=$$PWD
 GRAAL_VER=21.2.0.1
