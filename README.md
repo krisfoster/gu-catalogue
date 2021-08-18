@@ -39,5 +39,6 @@ $ make server
 $ make list
 
 # Install a component from the custom catalogue
+$ make install TruffleRuby
 ```
 
