@@ -29,7 +29,7 @@ show-config:
 server:
 	@echo "Starting catalogue server..."
 	# -d
-	docker run -it --rm -p 8080:80 --name web -v $$(PWD)/catalogues/:/usr/share/nginx/html nginx
+	docker run -it --rm -d -p 8080:80 --name web -v $$(PWD)/catalogues/:/usr/share/nginx/html nginx
 
 list:
 	@echo "Listing available components in the custom catalogue"
