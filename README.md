@@ -8,6 +8,11 @@ useful.
 
 This repo is a very simple demonstration of how to set this up and how to use this.
 
+## Setting Cutom Catalogue URLs
+They can either be passed to the `gu` tool or can be defined by an environment variable, `GRAALVM_CATALOG`. The
+`Makefile` has two examples using both scenarios. The target in the makefile, `list-using-env`, demonstrates 
+using environment variables to set the custom catalogue.
+
 ## Installtion of Components
 This works for any Java version, but this demo is set up for JDK 11
 

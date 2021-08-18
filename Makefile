@@ -33,6 +33,12 @@ list:
 	@echo "Listing available components in the custom catalogue"
 	gu --custom-catalog $(CATALOGUE) list
 
+list-using-env:
+	@echo "Listing available components in the custom catalogue, which is defined using a ENV variable"
+	# Important : the shell var needs to be defined on the same line as each line is run in a separate child process
+	# Which means that you set the variable in a child shell that exist after the varibale is set :)
+	export GRAALVM_CATALOG=$(CATALOGUE) && gu list
+
 install:
 	@echo "Installing component : $(INSTALLABLE)"
 	gu --custom-catalog $(CATALOGUE) install $(INSTALLABLE)
