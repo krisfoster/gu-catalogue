@@ -16,6 +16,8 @@ help:
 	@echo ""
 	@echo "* list: lists the components available in the catalogue"
 	@echo ""
+	@echo "* list: lists the components available in the catalogue, but making use of an ENV variable to set catalogue"
+	@echo ""
 	@echo "* install: This installs a component. By default this is ruby, but you can specify what to install as below:"
 	@echo "		\$$ make install INSTALABLE=llvm"
 
